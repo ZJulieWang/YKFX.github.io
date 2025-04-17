@@ -373,44 +373,57 @@
 </div>
 
 
-<div class="section" id="contact" style="background-color: #f3f3f3;">
-  <div class="container">
-    <h2 style="color: #2d7a6a;">联系我们</h2>
-    <form id="contact-us" method="post" action="contact.php">
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="contact-heading">联系我们</h2>
+  </div>
+  
+  <br>
+  <div class="mx-auto" style="max-width: 1100px;">
+    <form
+      id="contact-us"
+      method="POST"
+      action="https://formspree.io/f/mgvajeaj"
+    >
       <div class="row">
-        <div class="col-sm-6 wow animated fadeInLeft">
-          <input type="text" name="name" id="name" required="required" class="form" placeholder="姓名" />
-          <input type="email" name="email" id="email" required="required" class="form" placeholder="邮箱" />
-          <input type="text" name="subject" id="subject" required="required" class="form" placeholder="主题" />
+        <div class="col-md-6 wow animated fadeInLeft">
+          <input type="text" name="name" required class="form" placeholder="Name" />
+          <input type="email" name="email" required class="form" placeholder="Email" />
+          <input type="text" name="subject" required class="form" placeholder="Subject" />
+          <input type="hidden" name="_redirect" value="https://zjuliewang.github.io/YKFX.github.io/chn/thankyou.html">
         </div>
-        <div class="col-sm-6 wow animated fadeInRight">
-          <textarea name="message" id="message" class="form textarea" placeholder="留言内容"></textarea>
+        <div class="col-md-6 wow animated fadeInRight">
+          <textarea name="message" required class="form textarea" placeholder="Message"></textarea>
         </div>
       </div>
-      <div class="text-center">
-        <button type="submit" id="submit" name="submit" class="form-btn semibold">发送信息</button>
+      <div class="text-center mt-4">
+        <button type="submit" class="form-btn semibold">发送</button>
       </div>
+      <br>
     </form>
   </div>
 </div>
-
+      
 <footer id="site-footer">
   <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-          <span>&copy; 2025 怡科赋信 版权所有</span>
-            </div>
-            <div class="col-sm-6">
-                <ul class="networks">
-                    <li><a href="https://twitter.com/creativekitten"><span class="twitter">微博</span></a></li>
-                    <li><a href="https://facebook.com/creativekitten"><span class="facebook">微信公众号</span></a></li>
-                    <li><a href="https://instagram.com/creativekitten"><span class="instagram">小红书</span></a></li>
-                    <li><a href="http://www.linkedin.com/company/creativekitten"><span class="linkedin">LinkedIn</span></a></li>
-                </ul>
-            </div>
-        </div>
-  </div><!-- /.container -->
+    <div class="row align-items-center">
+     
+      <!-- 左边版权 -->
+      <div class="col-sm-6">
+        <span>&copy; 2025 怡科赋信 版权所有</span>
+      </div>
+
+      <!-- 右边二维码 + 文本 -->
+      <div class="col-sm-6 text-sm-end text-center">
+        <img src="../images/Rednote.jpg" alt="QR Code" style="height: 90px;" />
+        <p style="margin-top: 3px; font-size: 14px; color: #666;">小红书</p>
+        <p style="margin: 0; font-size: 14px; color: #666;">发送邮件至: wangyi9003@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
 </footer>
+
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
