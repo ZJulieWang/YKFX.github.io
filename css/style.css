@@ -1874,4 +1874,10 @@ header.smaller .navbar-nav > li > a {
     line-height: 1.8;
     color: #444;
   }
-  
+
+.achievement-thumb {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
